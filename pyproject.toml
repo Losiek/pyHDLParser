@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hdlparse"
+version = "0.0.1"
+description = "HDL parser"
+readme = "README.rst"
+license = {text = "MIT"}
+keywords = ["HDL", "parser"]
+authors = [
+    {name = "Kevin Thibedeau", email = "kevin.thibedeau@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Text Processing :: General",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = ">=3.0"
+urls = { "Homepage" = "http://kevinpt.github.io/hdlparse", "Download" = "http://kevinpt.github.io/hdlparse" }
+dependencies = [
+    "setuptools>=42",
+]
+
+[project.optional-dependencies]
+
+[tool.setuptools.package-data]
+"hdlparse" = ["*"]
+
+[tool.setuptools.packages.find]
+where = ["hdlparse"]
+
